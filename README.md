@@ -4,7 +4,7 @@
 
 Проект подготовлен и проверялся на:
 
-- Ballu BSVI-09HN8 Discovery;
+- Ballu BSVI-09HN8 Discovery v2 (Вторая ревизия, на первой ревизии протокол с ответом 61 байт);
 - ESP32-C3 DevKitM-1;
 - UART `9600 8E1`;
 - ESPHome 2026.5.1;
