@@ -1,0 +1,42 @@
+# Карточка Home Assistant.
+# Замените entity_id на значения из вашей установки.
+
+type: vertical-stack
+title: Кондиционер TCL/Ballu
+cards:
+  - type: thermostat
+    entity: climate.REPLACE_WITH_YOUR_CLIMATE_ENTITY
+    name: Кондиционер
+    features:
+      - type: climate-hvac-modes
+        hvac_modes:
+          - "off"
+          - cool
+          - heat
+          - dry
+          - fan_only
+          - auto
+
+  - type: entities
+    title: Управление жалюзи
+    show_header_toggle: false
+    entities:
+      - entity: select.REPLACE_WITH_VERTICAL_LOUVER_ENTITY
+        name: Вертикальные жалюзи
+        icon: mdi:arrow-up-down
+
+      - entity: select.REPLACE_WITH_HORIZONTAL_LOUVER_ENTITY
+        name: Горизонтальные жалюзи
+        icon: mdi:arrow-left-right
+
+  - type: entities
+    title: Дополнительные функции
+    show_header_toggle: false
+    entities:
+      - entity: switch.REPLACE_WITH_BEEPER_ENTITY
+        name: Звуковое подтверждение
+        icon: mdi:volume-high
+
+      - entity: switch.REPLACE_WITH_DISPLAY_ENTITY
+        name: Дисплей кондиционера
+        icon: mdi:monitor
